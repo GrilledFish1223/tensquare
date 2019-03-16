@@ -1,11 +1,10 @@
-package com.tensquare.base.controller;
+package com.ping.tensquare.base.controller;
 
-import entity.Result;
-import entity.StatusCode;
+import com.ping.common.entity.Result;
+import com.ping.common.entity.StatusCode;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 /**
  * 公共异常处理类

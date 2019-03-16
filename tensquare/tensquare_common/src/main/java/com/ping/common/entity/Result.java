@@ -1,5 +1,6 @@
 package com.ping.common.entity;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
 
 /**
@@ -8,6 +9,7 @@ import lombok.Data;
  * @copyright: @2019
  */
 @Data
+@AllArgsConstructor
 public class Result {
     /**
      * 是否成功
@@ -28,4 +30,10 @@ public class Result {
      * 返回数据
      */
     private Object data;
+
+    public Result(boolean flag, Integer code, String message) {
+        this.flag = flag;
+        this.code = code;
+        this.message = message;
+    }
 }
