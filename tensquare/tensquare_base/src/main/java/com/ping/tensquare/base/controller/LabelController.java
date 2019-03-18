@@ -1,11 +1,15 @@
 package com.ping.tensquare.base.controller;
 
+import com.ping.common.entity.PageResult;
 import com.ping.common.entity.Result;
 import com.ping.common.entity.StatusCode;
 import com.ping.tensquare.base.pojo.Label;
 import com.ping.tensquare.base.service.LabelService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.Map;
 
 /**
  * 标签控制层
@@ -73,5 +77,23 @@ public class LabelController {
     public Result deleteById(@PathVariable String id) {
         labelService.deleteById(id);
         return new Result(true, StatusCode.OK, "删除成功");
+    }
+
+    /**
+     * 条件查询
+     *
+     * @param searchMap
+     * @return
+     */
+    @PostMapping(value = "/search")
+    public Result findSearch(@RequestBody Map searchMap) {
+        return new Result(true, StatusCode.OK, "查询成功", labelService.findSearch(searchMap));
+    }
+
+    @PostMapping(value = "/search/{page}/{size}")
+    public Result findSearch(@RequestBody Map searchMap, @PathVariable int page, @PathVariable int size) {
+        Page<Label> pageList = labelService.findSearch(searchMap, page, size);
+        return new Result(true, StatusCode.OK, "查询成功",
+                new PageResult<>(pageList.getTotalElements(), pageList.getContent()));
     }
 }

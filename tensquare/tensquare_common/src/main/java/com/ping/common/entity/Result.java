@@ -2,6 +2,7 @@ package com.ping.common.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.RequiredArgsConstructor;
 
 /**
  * @author: zhangsp
@@ -19,7 +20,7 @@ public class Result {
     /**
      * 返回码
      */
-    private  Integer code;
+    private Integer code;
 
     /**
      * 返回信息

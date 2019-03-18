@@ -3,6 +3,7 @@ package com.ping.common.entity;
 
 /**
  * 状态码
+ *
  * @author: zhangsp
  * @date: 2019/3/16 14:51
  * @copyright: @2019

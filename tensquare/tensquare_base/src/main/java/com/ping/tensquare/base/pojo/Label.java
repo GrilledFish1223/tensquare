@@ -14,7 +14,7 @@ import javax.persistence.Table;
  * @copyright: @2019
  */
 @Entity
-@Table(name="tb_label")
+@Table(name = "tb_label")
 @Data
 public class Label {
     /**

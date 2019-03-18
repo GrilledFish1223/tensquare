@@ -1,5 +1,6 @@
 package com.ping.common.entity;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
 
 import java.util.List;
@@ -10,6 +11,7 @@ import java.util.List;
  * @copyright: @2019
  */
 @Data
+@AllArgsConstructor
 public class PageResult<T> {
     /**
      * 总数
@@ -20,5 +22,6 @@ public class PageResult<T> {
      * 行数
      */
     private List<T> rows;
+
 
 }
