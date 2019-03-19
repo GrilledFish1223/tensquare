@@ -11,6 +11,9 @@
     <modules>
         <module>tensquare_base</module>
         <module>tensquare_common</module>
+        <module>tensquare_recruit</module>
+        <module>tensquare_qa</module>
+        <module>tensquare_article</module>
     </modules>
 
     <packaging>pom</packaging>
@@ -41,6 +44,12 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
         </dependency>
     </dependencies>
 
