@@ -12,7 +12,7 @@ import javax.persistence.Table;
  * @copyright: @2019
  */
 @Entity
-@Table(name="tb_channel")
+@Table(name = "tb_channel")
 @Data
 public class Channel {
     /**

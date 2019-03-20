@@ -9,13 +9,14 @@ import org.springframework.data.jpa.repository.Query;
 
 /**
  * 数据访问接口
- * @author Administrator
  *
+ * @author Administrator
  */
-public interface ArticleDao extends JpaRepository<Article,String>, JpaSpecificationExecutor<Article> {
+public interface ArticleDao extends JpaRepository<Article, String>, JpaSpecificationExecutor<Article> {
 
     /**
      * 审核
+     *
      * @param id
      */
     @Modifying
@@ -24,6 +25,7 @@ public interface ArticleDao extends JpaRepository<Article,String>, JpaSpecificat
 
     /**
      * 点赞
+     *
      * @param id
      */
     @Modifying

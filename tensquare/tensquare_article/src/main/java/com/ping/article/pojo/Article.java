@@ -13,7 +13,7 @@ import java.io.Serializable;
  * @copyright: @2019
  */
 @Entity
-@Table(name="tb_article")
+@Table(name = "tb_article")
 @Data
 public class Article implements Serializable {
     @Id

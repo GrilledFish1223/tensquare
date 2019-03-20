@@ -1,4 +1,4 @@
-package com.ping.article;
+package com.ping.tensquare.spit;
 
 import com.ping.common.util.IdWorker;
 import org.springframework.boot.SpringApplication;
@@ -6,10 +6,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
-public class ArticleApplication {
+public class TensquareSpitApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(ArticleApplication.class, args);
+        SpringApplication.run(TensquareSpitApplication.class, args);
     }
 
     @Bean

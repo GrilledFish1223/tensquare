@@ -12,7 +12,7 @@ import javax.persistence.Table;
  * @copyright: @2019
  */
 @Entity
-@Table(name="tb_column")
+@Table(name = "tb_column")
 @Data
 public class Column {
     /**

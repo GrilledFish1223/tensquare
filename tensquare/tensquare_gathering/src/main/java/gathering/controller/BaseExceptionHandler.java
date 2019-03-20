@@ -1,7 +1,7 @@
-package com.ping.article.controller;
+package gathering.controller;
 
-import entity.Result;
-import entity.StatusCode;
+import com.ping.common.entity.Result;
+import com.ping.common.entity.StatusCode;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
